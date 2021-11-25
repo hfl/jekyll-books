@@ -9,28 +9,28 @@ permalink: /
 # 专注于编写好文档
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+文档而已（Just the Docs）可以使您编写一个可定制且托管于 GitHub Pages 的响应式文档作为起点。
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+[马上开始](#开始){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [在 GitHub 查看](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
-## Getting started
+## 开始
 
-### Dependencies
+### 依赖关系
 
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
+『文档而已』基于静态站点生成器—— [Jekyll](https://jekyllrb.com) 系统，想要获取更多信息请查阅[快速上手指南](https://jekyllrb.com/docs/)。『文档而已』不需要特殊插件就可以运行 GitHub Pages 的标准 Jekyll 编译器。[Jekyll SEO Tag 插件](https://github.com/jekyll/jekyll-seo-tag)默认已经内置（不需另行安装），所以可以直接在文档页面使用 SEO 和打开图形元数据。配置 SEO 和打开图形元数据查阅 [Jekyll SEO Tag 使用指南](https://jekyll.github.io/jekyll-seo-tag/usage/)。
 
-### Quick start: Use as a GitHub Pages remote theme
+### 快速开始：使用 GitHub Pages 远程版式
 
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
+1. 添加『文档而已』到 Jekyll 站点的 `_config.yml` 文件中的 [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) 参数
 ```yaml
 remote_theme: pmarsceill/just-the-docs
 ```
 <small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
 
-### Local installation: Use the gem-based theme
+### 本地化安装：使用基于 GEM 的版式
 
 1. Install the Ruby Gem
 ```bash
@@ -60,21 +60,21 @@ $ bundle exec jekyll serve
 
 If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
-### Configure Just the Docs
+### 配置『文档而已』
 
 - [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
 
 ---
 
-## About the project
+## 关于项目
 
 Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
 
-### License
+### 许可
 
 Just the Docs is distributed by an [MIT license](https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt).
 
-### Contributing
+### 参与
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/pmarsceill/just-the-docs#contributing).
