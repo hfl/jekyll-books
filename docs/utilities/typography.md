@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Typography
-parent: Utilities
+title: 排版
+parent: 工具类
 ---
 
-# Typography Utilities
+# 排版工具类
 {: .no_toc }
 
 ## Table of contents

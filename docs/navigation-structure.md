@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Navigation Structure
+title: 导航架构
 nav_order: 5
 ---
 
-# Navigation Structure
+# 导航架构
 {: .no_toc }
 
 <details open markdown="block">
   <summary>
-    Table of contents
+    目录
   </summary>
   {: .text-delta }
 1. TOC
@@ -18,7 +18,7 @@ nav_order: 5
 
 ---
 
-## Main navigation
+## 主导行
 
 The main navigation for your Just the Docs site is on the left side of the page at large screens and on the top (behind a tap) on small screens. The main navigation can be structured to accommodate a multi-level menu system (pages with children and grandchildren).
 
@@ -26,11 +26,11 @@ By default, all pages will appear as top level pages in the main nav unless a pa
 
 ---
 
-## Ordering pages
+## 页面排序
 
 To specify a page order, you can use the `nav_order` parameter in your pages' YAML front matter.
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```yaml
@@ -51,11 +51,11 @@ By default, all Capital letters come before all lowercase letters; you can add `
 
 ---
 
-## Excluding pages
+## 排除页面
 
 For specific pages that you do not wish to include in the main navigation, e.g. a 404 page or a landing page, use the `nav_exclude: true` parameter in the YAML front matter for that page.
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```yaml
@@ -72,7 +72,7 @@ Pages with no `title` are automatically excluded from the navigation.
 
 ---
 
-## Pages with children
+## 含子页面的页面
 
 Sometimes you will want to create a page with many children (a section). First, it is recommended that you keep pages that are related in a directory together... For example, in these docs, we keep all of the written documentation in the `./docs` directory and each of the sections in subdirectories like `./docs/ui-components` and `./docs/utilities`. This gives us an organization like:
 
@@ -106,7 +106,7 @@ Sometimes you will want to create a page with many children (a section). First, 
 On the parent pages, add this YAML front matter parameter:
 -  `has_children: true` (tells us that this is a parent page)
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```yaml
@@ -120,12 +120,12 @@ has_children: true
 
 Here we're setting up the UI Components landing page that is available at `/docs/ui-components`, which has children and is ordered second in the main nav.
 
-### Child pages
+### 子页面
 {: .text-gamma }
 
 On child pages, simply set the `parent:` YAML front matter to whatever the parent's page title is and set a nav order (this number is now scoped within the section).
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```yaml
@@ -139,11 +139,11 @@ nav_order: 2
 
 The Buttons page appears as a child of UI Components and appears second in the UI Components section.
 
-### Auto-generating Table of Contents
+### 自动生成目录
 
 By default, all pages with children will automatically append a Table of Contents which lists the child pages after the parent page's content. To disable this auto Table of Contents, set `has_toc: false` in the parent page's YAML front matter.
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```yaml
@@ -156,7 +156,7 @@ has_toc: false
 ---
 ```
 
-### Children with children
+### 含子页面的子页面
 {: .text-gamma }
 
 Child pages can also have children (grandchildren). This is achieved by using a similar pattern on the child and grandchild pages.
@@ -164,7 +164,7 @@ Child pages can also have children (grandchildren). This is achieved by using a 
 1. Add the `has_children` attribute to the child
 1. Add the `parent` and `grand_parent` attribute to the grandchild
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```yaml
@@ -205,11 +205,11 @@ This would create the following navigation structure:
 
 ---
 
-## Auxiliary Links
+## 辅助链接
 
 To add auxiliary links to your site (in the upper right on all pages), add it to the `aux_links` [configuration option]({{ site.baseurl }}{% link docs/configuration.md %}#aux-links) in your site's `_config.yml` file.
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```yaml
@@ -221,11 +221,11 @@ aux_links:
 
 ---
 
-## In-page navigation with Table of Contents
+## 带页内目录导航的页面
 
 To generate a Table of Contents on your docs pages, you can use the `{:toc}` method from Kramdown, immediately after an `<ol>` in Markdown. This will automatically generate an ordered list of anchor links to various sections of the page based on headings and heading levels. There may be occasions where you're using a heading and you don't want it to show up in the TOC, so to skip a particular heading use the `{: .no_toc }` CSS class.
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```markdown
@@ -241,7 +241,7 @@ To generate a Table of Contents on your docs pages, you can use the `{:toc}` met
 
 This example skips the page name heading (`#`) from the TOC, as well as the heading for the Table of Contents itself (`##`) because it is redundant, followed by the table of contents itself. To get an unordered list, replace  `1. TOC` above by `- TOC`.
 
-### Collapsible Table of Contents
+### 折叠目录
 
 The Table of Contents can be made collapsible using the `<details>` and `<summary>` elements , as in the following example. The attribute `open` (expands the Table of Contents by default) and the styling with `{: .text-delta }` are optional.
 
@@ -256,4 +256,4 @@ The Table of Contents can be made collapsible using the `<details>` and `<summar
 </details>
 ```
 
-The result is shown at [the top of this page](#navigation-structure) (`{:toc}` can be used only once on each page).
+The result is shown at [the top of this page](#导航架构) (`{:toc}` can be used only once on each page).

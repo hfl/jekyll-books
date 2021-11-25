@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Search
+title: 搜索
 nav_order: 7
 ---
 
-# Search
+# 搜索
 {: .no_toc }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC

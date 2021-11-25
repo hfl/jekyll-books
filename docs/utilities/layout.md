@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Layout
-parent: Utilities
+title: 布局
+parent: 工具类
 ---
 
-# Layout Utilities
+# 布局工具类
 {: .no_toc }
 
 ## Table of contents

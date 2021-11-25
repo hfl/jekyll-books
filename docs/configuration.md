@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Configuration
+title: 配置
 nav_order: 2
 ---
 
-# Configuration
+# 配置
 {: .no_toc }
 
 
 Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's _config.yml file.
 {: .fs-6 .fw-300 }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC
@@ -23,14 +23,14 @@ Just the Docs has some specific configuration parameters that can be defined in 
 View this site's [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) file as an example.
 
 
-## Site logo
+## 站点标志
 
 ```yaml
 # Set a path/url to a logo that will be displayed instead of the title
 logo: "/assets/images/just-the-docs.png"
 ```
 
-## Search
+## 搜索
 
 ```yaml
 # Enable or disable the site search

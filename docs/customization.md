@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Customization
+title: 定制
 nav_order: 6
 ---
 
-# Customization
+# 定制
 {: .no_toc }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC

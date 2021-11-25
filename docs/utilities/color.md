@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Color
-parent: Utilities
+title: 颜色
+parent: 工具类
 ---
 
-# Color Utilities
+# 颜色工具类
 {: .no_toc }
 
 ## Table of contents
