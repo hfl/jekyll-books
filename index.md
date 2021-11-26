@@ -97,4 +97,4 @@ $ bundle exec jekyll serve
 ---
 #### 注释
 
-[^1]: Just the Docs 的中文版名字
+[^1]: 『文档而已』是译者为 Just the Docs 取的中文名字。

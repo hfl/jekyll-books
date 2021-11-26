@@ -73,39 +73,37 @@ aux_links:
 aux_links_new_tab: false
 ```
 
-## 顶部锚点链接
+## 标题锚点链接
 
 ```yaml
-# Heading anchor links appear on hover over h1-h6 tags in page content
-# allowing users to deep link to a particular heading on a page.
+# 标题锚点链接在页面内容的 h1 到 h6 级标题悬停时显示，用于用户链接到页面内指定内容。
 #
-# Supports true (default) or false
+# 支持 true （默认值）或者 false
 heading_anchors: true
 ```
 
 ## 页尾内容
 
 ```yaml
-# Footer content
-# appears at the bottom of every page's main content
-# Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust
-markup / liquid-based content.
+# 页尾内容
+# 出现在每页内容的结尾处
+# 注意：footer_content 选项已弃用，可能会在未来的主要版本中删除。  请使用`_includes/footer_custom.html` 以获得更强大的功能。 
 footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt\">MIT license.</a>"
 
-# Footer last edited timestamp
+# 页尾最后更新时间
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
-# Footer "Edit this page on GitHub" link text
-gh_edit_link: true # show or hide edit this page link
-gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/pmarsceill/just-the-docs" # the github URL for your repo
-gh_edit_branch: "master" # the branch that your docs is served from
-# gh_edit_source: docs # the source that your files originate from
-gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+# 页尾 "在 GitHub 编辑此页" 链接文字
+gh_edit_link: true # 显示或隐藏编辑此页链接
+gh_edit_link_text: "在 GitHub 编辑此页。"
+gh_edit_repository: "https://github.com/pmarsceill/just-the-docs" # 您的 github 仓储 URL
+gh_edit_branch: "master" # 您的文档分支
+# gh_edit_source: docs # 源文件目录
+gh_edit_view_mode: "tree" # "tree" 或者 "edit" ，您想要用于立即跳转编辑器的方式
 ```
 
-_note: `footer_content` is deprecated, but still supported. For a better experience we have moved this into an include called `_includes/footer_custom.html` which will allow for robust markup / liquid-based content._
+_注意：`footer_content` 已经弃用，但仍支持。更好的使用体验是将其功能移入`_includes/footer_custom.html`——内容将支持功能强大的标记语言 liquid。_
 
 - the "page last modified" data will only display if a page has a key called `last_modified_date`, formatted in some readable date format
 - `last_edit_time_format` uses Ruby's DateTime formatter; see examples and more information [at this link.](https://apidock.com/ruby/DateTime/strftime)
@@ -149,24 +147,23 @@ ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (t
 
 ## 文档专题集合
 
-By default, the navigation and search include normal [pages](https://jekyllrb.com/docs/pages/).
-Instead, you can also use [Jekyll collections](https://jekyllrb.com/docs/collections/) which group documents semantically together.
+默认情况下导航和搜索包含普通[页面](https://jekyllrb.com/docs/pages/)。当然，也可以使用 [Jekyll 集合（collections）](https://jekyllrb.com/docs/collections/)从语义上对页面归类。
 
-For example, put all your documentation files in the `_docs` folder and create the `docs` collection:
+例如，将所有文档文件放入 `_docs` 文件夹，然后创建 `docs` 集合：
 ```yaml
-# Define Jekyll collections
+# 定义 Jekyll 集合
 collections:
-  # Define a collection named "docs", its documents reside in the "_docs" directory
+  # 定义一个叫做 "docs" 的集合，其文档位于 "_docs" 目录
   docs:
     permalink: "/:collection/:path/"
     output: true
 
 just_the_docs:
-  # Define which collections are used in just-the-docs
+  # 定义用于 just-the-docs 的集合
   collections:
-    # Reference the "docs" collection
+    # 引用 "docs" 集合
     docs:
-      # Give the collection a name
+      # 设定集合名字
       name: Documentation
       # Exclude the collection from the navigation
       # Supports true or false (default)
