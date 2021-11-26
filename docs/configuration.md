@@ -8,7 +8,7 @@ nav_order: 2
 {: .no_toc }
 
 
-Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's _config.yml file.
+『文档而已』可以在 `_config.yml` 文件中定义一些 Jekyll 站点的规范配置参数。
 {: .fs-6 .fw-300 }
 
 ## 目录
@@ -20,21 +20,20 @@ Just the Docs has some specific configuration parameters that can be defined in 
 ---
 
 
-View this site's [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) file as an example.
-
+查看站点 [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) 文件示例。
 
 ## 站点标志
 
 ```yaml
-# Set a path/url to a logo that will be displayed instead of the title
+# 设置替换标题的标志 path/url
 logo: "/assets/images/just-the-docs.png"
 ```
 
 ## 搜索
 
 ```yaml
-# Enable or disable the site search
-# Supports true (default) or false
+# 启用或者关闭站点搜索
+# 主持 true （默认）或者 false
 search_enabled: true
 
 search:
@@ -62,7 +61,7 @@ search:
   button: false
 ```
 
-## Aux links
+## 辅助链接
 
 ```yaml
 # Aux links for the upper right navigation
@@ -74,7 +73,7 @@ aux_links:
 aux_links_new_tab: false
 ```
 
-## Heading anchor links
+## 顶部锚点链接
 
 ```yaml
 # Heading anchor links appear on hover over h1-h6 tags in page content
@@ -84,7 +83,7 @@ aux_links_new_tab: false
 heading_anchors: true
 ```
 
-## Footer content
+## 页尾内容
 
 ```yaml
 # Footer content
@@ -115,13 +114,13 @@ _note: `footer_content` is deprecated, but still supported. For a better experie
 - `gh_edit_source` is the source directory that your project files are stored in (should be the same as [site.source](https://jekyllrb.com/docs/configuration/options/))
 - `gh_edit_view_mode` is `"tree"` by default, which brings the user to the github page; switch to `"edit"` to bring the user directly into editing mode
 
-## Color scheme
+## 色彩方案
 
 ```yaml
-# Color scheme supports "light" (default) and "dark"
+# 色彩方案支持 "亮色" (默认) 和 "暗色"
 color_scheme: dark
 ```
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+<button class="btn js-toggle-dark-mode">预览暗色方案</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -129,26 +128,26 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Preview dark color scheme';
+    toggleDarkMode.textContent = '预览暗色方案';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
+    toggleDarkMode.textContent = '返回亮色';
   }
 });
 </script>
 
-See [Customization]({{ site.baseurl }}{% link docs/customization.md %}) for more information.
+查看[定制]({{ site.baseurl }}{% link docs/customization.md %})获取详细信息。
 
-## Google Analytics
+## Google 分析
 
 ```yaml
-# Google Analytics Tracking (optional)
+# Google 访问分析追踪（可选）
 # e.g, UA-1234567-89
 ga_tracking: UA-5555555-55
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
 ```
 
-## Document collections
+## 文档专题集合
 
 By default, the navigation and search include normal [pages](https://jekyllrb.com/docs/pages/).
 Instead, you can also use [Jekyll collections](https://jekyllrb.com/docs/collections/) which group documents semantically together.

@@ -15,76 +15,72 @@ nav_order: 7
 
 ---
 
-Just the Docs uses [lunr.js](http://lunrjs.com) to add a client-side search interface powered by a JSON index that Jekyll generates.
-All search results are shown in an auto-complete style interface (there is no search results page).
-By default, all generated HTML pages are indexed using the following data points:
+『文档而已』使用 [lunr.js](http://lunrjs.com) 提供基于 Jekyll 生成的 JSON 索引的客户端搜索。
+所有搜索结果使用一个自动完成样式的界面显示（没有单独的搜索结果页面）。
+所有生成的 HTML 页面默认基于下面数据要素显示：
 
-- Page title
-- Page content
-- Page URL
+- 页面标题
+- 页面内容
+- 页面 URL
 
-## Enable search in configuration
+## 在配置中启用搜索
 
-In your site's `_config.yml`, enable search:
+在站点的 `_config.yml` 文件中启用搜索：
 
 ```yaml
-# Enable or disable the site search
-# Supports true (default) or false
+# 启用或关闭站点搜索
+# 支持 true （默认值）或 false
 search_enabled: true
 ```
 
-### Search granularity
+### 搜索粒度
 
-Pages are split into sections that can be searched individually.
-The sections are defined by the headings on the page.
-Each section is displayed in a separate search result.
+页面被分成可以单独搜索的部分，这些部分根据页面标题定义和划分，每部分均会在搜索结果中独立显示。
 
 ```yaml
-# Split pages into sections that can be searched individually
-# Supports 1 - 6, default: 2
+# 页面被分成可以单独搜索的部分
+# 支持值 1 - 6, 默认值： 2
 search.heading_level: 2
 ```
 
-### Search previews
+### 搜索预览
 
-A search result can contain previews that show where the search words are found in the specific section.
+搜索结果可以预览——显示检索词在结果中的相关位置和内容。
 
 ```yaml
-# Maximum amount of previews per search result
-# Default: 3
+# 检索结果最大值
+# 默认值： 3
 search.previews: 3
 
-# Maximum amount of words to display before a matched word in the preview
-# Default: 5
+# 预览中匹配搜索词前显示的最大单词数
+# 默认值： 5
 search.preview_words_before: 5
 
-# Maximum amount of words to display after a matched word in the preview
-# Default: 10
+# 预览中匹配搜索词后显示的最大单词数
+# 默认值： 10
 search.preview_words_after: 10
 ```
 
-### Search tokenizer
+### 搜索分词器
 
-The default is for hyphens to separate tokens in search terms:
-`gem-based` is equivalent to `gem based`, matching either word.
-To allow search for hyphenated words:
+默认情况下，连字符用于分隔搜索词：`gem-based` 等效于 `gem based`，匹配任一单词。允许搜索带连字符的单词：
 
 ```yaml
-# Set the search token separator
-# Default: /[\s\-/]+/
-# Example: enable support for hyphenated search words
+# 设置搜索分词器
+# 默认值： /[\s\-/]+/
+# 示例：启用连字符搜索关键词支持
 search.tokenizer_separator: /[\s/]+/
 ```
 
-### Display URL in search results 
+### 搜索结果中显示 URL
 
 ```yaml
-# Display the relative url in search results
-# Supports true (default) or false
+# 搜索结果中显示 url
+# 支持 true （默认值）或者 false
 search.rel_url: false
 ```
 
-### Display search button
+### 显示搜索按钮
 
 The search button displays in the bottom right corner of the screen and triggers the search input when clicked.
 
@@ -95,7 +91,7 @@ search.button: true
 ```
 
 
-## Hiding pages from search
+## 不参与搜索页面
 
 Sometimes you might have a page that you don't want to be indexed for the search nor to show up in search results, e.g, a 404 page.
 To exclude a page from search, add the `search_exclude: true` parameter to the page's YAML front matter:
@@ -113,7 +109,7 @@ search_exclude: true
 ```
 
 
-## Generate search index when used as a gem
+## 使用 GEM 生成搜索索引
 
 If you use Just the Docs as a remote theme, you do not need the following steps.
 
