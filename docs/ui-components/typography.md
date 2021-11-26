@@ -8,7 +8,7 @@ nav_order: 1
 # Typography
 {: .no_toc }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC

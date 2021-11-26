@@ -7,7 +7,7 @@ parent: 工具类
 # 排版工具类
 {: .no_toc }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC
@@ -15,11 +15,11 @@ parent: 工具类
 
 ---
 
-## Font size
+## 文字大小
 
-Use the `.fs-1` - `.fs-10` to set an explicit font-size.
+使用 `.fs-1` —— `.fs-10` 精准设置文字大小。
 
-| Class   | Small screen size `font-size`  | Large screen size `font-size` |
+| 类      | 小屏幕字号 `font-size`        | 大屏幕自号 `font-size`       |
 |:--------|:-------------------------------|:------------------------------|
 | `.fs-1` | 9px                            | 10px                          |
 | `.fs-2` | 11px                           | 12px                          |
@@ -33,29 +33,29 @@ Use the `.fs-1` - `.fs-10` to set an explicit font-size.
 | `.fs-10`| 42px                           | 48px                          |
 
 <div class="code-example" markdown="1">
-Font size 1
+1 号文字
 {: .fs-1 }
-Font size 2
+ 2 号文字
 {: .fs-2 }
-Font size 3
+ 3 号文字
 {: .fs-3 }
-Font size 4
+ 4 号文字
 {: .fs-4 }
-Font size 5
+ 5 号文字
 {: .fs-5 }
-Font size 6
+ 6 号文字
 {: .fs-6 }
-Font size 7
+ 7 号文字
 {: .fs-7 }
-Font size 8
+ 8 号文字
 {: .fs-8 }
-Font size 9
+ 9 号文字
 {: .fs-9 }
-Font size 10
+ 10 号文字
 {: .fs-10 }
 </div>
 ```markdown
-In Markdown, use the `{: }` wrapper to apply custom classes:
+在 Markdown 语法里，用 `{: }` 包裹应用定制类：
 
 Font size 1
 {: .fs-1 }
@@ -79,9 +79,9 @@ Font size 10
 {: .fs-10 }
 ```
 
-## Font weight
+## 文字粗细
 
-Use the `.fw-300` - `.fw-700` to set an explicit font-size.
+使用 `.fw-300` —— `.fw-700` 精准设置文字粗细。
 
 <div class="code-example" markdown="1">
 Font weight 300
@@ -94,7 +94,7 @@ Font weight 700
 {: .fw-700 }
 </div>
 ```markdown
-In Markdown, use the `{: }` wrapper to apply custom classes:
+使用 Markdown 语法，用 `{: }` 包裹应用定制类：
 
 Font weight 300
 {: .fw-300 }
@@ -106,11 +106,11 @@ Font weight 700
 {: .fw-700 }
 ```
 
-## Line height
+## 行高
 
-Use the `lh-` classes to explicitly apply line height to text.
+使用 `lh-` 类精准设置行高。
 
-| Class         | `line-height` value  | Notes                         |
+| 类            | `line-height` 值    | 说明                          |
 |:--------------|:---------------------|:------------------------------|
 | `.lh-0`       | 0                    |                               |
 | `.lh-tight`   | 1.1                  | Default for headings          |
@@ -145,7 +145,7 @@ Default line height
 {: .fh-default }
 ```
 
-## Text justification
+## 文字对齐
 
 By default text is justified left. Use these `text-` classes to override settings:
 

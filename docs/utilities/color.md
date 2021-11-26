@@ -17,7 +17,7 @@ parent: 工具类
 
 All the colors used in Just the Docs have been systematized into a series of variables that have been extended to both font color and background color utility classes.
 
-## Light Greys
+## 亮灰
 
 | Color value    | Font color utility   | Background color utility |
 |:---------------|:---------------------|:-------------------------|
@@ -26,7 +26,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-grey-lt-200"></span> `grey-lt-200` | `.text-grey-lt-200` | `.bg-grey-lt-200` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-grey-lt-300"></span> `grey-lt-300` | `.text-grey-lt-300` | `.bg-grey-lt-300` |
 
-## Dark Greys
+## 暗灰
 
 | Color value    | Font color utility   | Background color utility |
 |:---------------|:---------------------|:-------------------------|
@@ -36,7 +36,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-grey-dk-250"></span> `grey-dk-250` | `.text-grey-dk-250` | `.bg-grey-dk-250` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-grey-dk-300"></span> `grey-dk-300` | `.text-grey-dk-300` | `.bg-grey-dk-300` |
 
-## Purples
+## 紫色
 
 | Color value    | Font color utility   | Background color utility |
 |:---------------|:---------------------|:-------------------------|
@@ -45,7 +45,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-200"></span> `purple-200` | `.text-purple-200` | `.bg-purple-200` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-300"></span> `purple-300` | `.text-purple-300` | `.bg-purple-300` |
 
-## Blues
+## 蓝色
 
 | Color value    | Font color utility   | Background color utility |
 |:---------------|:---------------------|:-------------------------|
@@ -54,7 +54,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-blue-200"></span> `blue-200` | `.text-blue-200` | `.bg-blue-200` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-blue-300"></span> `blue-300` | `.text-blue-300` | `.bg-blue-300` |
 
-## Greens
+## 绿色
 
 | Color value    | Font color utility   | Background color utility |
 |:---------------|:---------------------|:-------------------------|
@@ -63,7 +63,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-green-200"></span> `green-200` | `.text-green-200` | `.bg-green-200` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-green-300"></span> `green-300` | `.text-green-300` | `.bg-green-300` |
 
-## Yellows
+## 黄色
 
 | Color value    | Font color utility   | Background color utility |
 |:---------------|:---------------------|:-------------------------|
@@ -72,7 +72,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-200"></span> `yellow-200` | `.text-yellow-200` | `.bg-yellow-200` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-300"></span> `yellow-300` | `.text-yellow-300` | `.bg-yellow-300` |
 
-## Reds
+## 红色
 
 | Color value    | Font color utility   | Background color utility |
 |:---------------|:---------------------|:-------------------------|

@@ -15,7 +15,7 @@ parent: 工具类
 
 ---
 
-## Spacing
+## 空间控制
 
 These spacers are available to use for margins and padding with responsive utility classes. Combine these prefixes with a screen size and spacing scale to use them responsively.
 
@@ -55,7 +55,7 @@ Spacing values are based on a `1rem = 16px` spacing scale, broken down into thes
 
 Use `mx-auto` to horizontally center elements.
 
-#### Examples
+#### 示例
 {: .no_toc }
 
 In Markdown, use the `{: }` wrapper to apply custom classes:
@@ -68,7 +68,7 @@ This paragraph will have 2rem/32px of padding on the right and left at all scree
 {: .px-6 }
 ```
 
-## Horizontal Alignment
+## 水平对齐
 
 | Classname               | What it does                     |
 |:------------------------|:---------------------------------|
@@ -81,7 +81,7 @@ This paragraph will have 2rem/32px of padding on the right and left at all scree
 
 _Note: any of the `flex-` classes must be used on a parent element that has `d-flex` applied to it._
 
-## Vertical Alignment
+## 垂直对齐
 
 | Classname              | What it does                    |
 |:-----------------------|:--------------------------------|
@@ -92,7 +92,7 @@ _Note: any of the `flex-` classes must be used on a parent element that has `d-f
 | `.v-align-text-top`    | `vertical-align: text-top`      |
 | `.v-align-top`         | `vertical-align: top`           |
 
-## Display
+## 显示
 
 Display classes aid in adapting the layout of the elements on a page:
 
@@ -106,7 +106,7 @@ Display classes aid in adapting the layout of the elements on a page:
 
 Use these classes in conjunction with the responsive modifiers.
 
-#### Examples
+#### 示例
 {: .no_toc }
 
 In Markdown, use the `{: }` wrapper to apply custom classes:

@@ -4,11 +4,11 @@ title: Markdown 测试
 nav_order: 99
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+文本可以是**粗体**，_斜体_，或者~~删除线~~。
 
-[Link to another page](another-page).
+[链接到另一个页面](another-page)。
 
-There should be whitespace between paragraphs.
+段落之间要留空行。
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
