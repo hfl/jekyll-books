@@ -55,7 +55,7 @@ parent: 工具类
 {: .fs-10 }
 </div>
 ```markdown
-在 Markdown 语法里，用 `{: }` 包裹应用定制类：
+在 Markdown 里，用 `{: }` 包裹应用定制类：
 
 Font size 1
 {: .fs-1 }
@@ -94,7 +94,7 @@ Font weight 700
 {: .fw-700 }
 </div>
 ```markdown
-使用 Markdown 语法，用 `{: }` 包裹应用定制类：
+在 Markdown 里，用 `{: }` 包裹应用定制类：
 
 Font weight 300
 {: .fw-300 }
@@ -117,39 +117,39 @@ Font weight 700
 | `.lh-default` | 1.4                  | Default for body (paragraphs) |
 
 <div class="code-example" markdown="1">
-No Line height
-No Line height
+未设置行高
+未设置行高
 {: .lh-0 }
 
-Tight line height
-Tight line height
+设置紧凑行高
+设置紧凑行高
 {: .lh-tight }
 
-Default line height
-Default line height
+设置默认行高
+设置默认行高
 {: .fh-default }
 </div>
 ```markdown
-In Markdown, use the `{: }` wrapper to apply custom classes:
+在 Markdown 中，使用 `{: }` 包裹应用定制类：
 
-No Line height
-No Line height
+未设置行高
+未设置行高
 {: .lh-0 }
 
-Tight line height
-Tight line height
+设置紧凑行高
+设置紧凑行高
 {: .lh-tight }
 
-Default line height
-Default line height
+设置默认行高
+设置默认行高
 {: .fh-default }
 ```
 
 ## 文字对齐
 
-By default text is justified left. Use these `text-` classes to override settings:
+默认文本左对齐。使用这些 `text-` 类覆盖默认值： settings:
 
-| Class          | What it does         |
+| 类             | 等同于              |
 |:---------------|:---------------------|
 | `.text-left`   | `text-align: left`   |
 | `.text-right`  | `text-align: right`  |

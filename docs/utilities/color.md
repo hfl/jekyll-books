@@ -7,7 +7,7 @@ parent: 工具类
 # 颜色工具类
 {: .no_toc }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC
@@ -15,12 +15,12 @@ parent: 工具类
 
 ---
 
-All the colors used in Just the Docs have been systematized into a series of variables that have been extended to both font color and background color utility classes.
+『文本而已』中使用的所有颜色都已系统化为一系列变量，这些变量已扩展为字体颜色和背景颜色实用程序类。
 
 ## 亮灰
 
-| Color value    | Font color utility   | Background color utility |
-|:---------------|:---------------------|:-------------------------|
+| 颜色值     | 字体颜色类         | 背景颜色类        |
+|:-----------|:---------------------|:------------------|
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-grey-lt-000"></span> `grey-lt-000` | `.text-grey-lt-000` | `.bg-grey-lt-000` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-grey-lt-100"></span> `grey-lt-100` | `.text-grey-lt-100` | `.bg-grey-lt-100` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-grey-lt-200"></span> `grey-lt-200` | `.text-grey-lt-200` | `.bg-grey-lt-200` |
@@ -28,7 +28,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 
 ## 暗灰
 
-| Color value    | Font color utility   | Background color utility |
+| 颜色值    | 字体颜色类   | 背景颜色类 |
 |:---------------|:---------------------|:-------------------------|
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-grey-dk-000"></span> `grey-dk-000` | `.text-grey-dk-000` | `.bg-grey-dk-000` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-grey-dk-100"></span> `grey-dk-100` | `.text-grey-dk-100` | `.bg-grey-dk-100` |
@@ -38,7 +38,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 
 ## 紫色
 
-| Color value    | Font color utility   | Background color utility |
+| 颜色值    | 字体颜色类   | 背景颜色类 |
 |:---------------|:---------------------|:-------------------------|
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-000"></span> `purple-000` | `.text-purple-000` | `.bg-purple-000` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-purple-100"></span> `purple-100` | `.text-purple-100` | `.bg-purple-100` |
@@ -47,7 +47,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 
 ## 蓝色
 
-| Color value    | Font color utility   | Background color utility |
+| 颜色值    | 字体颜色类   | 背景颜色类 |
 |:---------------|:---------------------|:-------------------------|
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-blue-000"></span> `blue-000` | `.text-blue-000` | `.bg-blue-000` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-blue-100"></span> `blue-100` | `.text-blue-100` | `.bg-blue-100` |
@@ -56,7 +56,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 
 ## 绿色
 
-| Color value    | Font color utility   | Background color utility |
+| 颜色值    | 字体颜色类   | 背景颜色类 |
 |:---------------|:---------------------|:-------------------------|
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-green-000"></span> `green-000` | `.text-green-000` | `.bg-green-000` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-green-100"></span> `green-100` | `.text-green-100` | `.bg-green-100` |
@@ -65,7 +65,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 
 ## 黄色
 
-| Color value    | Font color utility   | Background color utility |
+| 颜色值    | 字体颜色类   | 背景颜色类 |
 |:---------------|:---------------------|:-------------------------|
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-000"></span> `yellow-000` | `.text-yellow-000` | `.bg-yellow-000` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-yellow-100"></span> `yellow-100` | `.text-yellow-100` | `.bg-yellow-100` |
@@ -74,7 +74,7 @@ All the colors used in Just the Docs have been systematized into a series of var
 
 ## 红色
 
-| Color value    | Font color utility   | Background color utility |
+| 颜色值    | 字体颜色类   | 背景颜色类 |
 |:---------------|:---------------------|:-------------------------|
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-red-000"></span> `red-000` | `.text-red-000` | `.bg-red-000` |
 | <span class="d-inline-block p-2 mr-1 v-align-middle bg-red-100"></span> `red-100` | `.text-red-100` | `.bg-red-100` |

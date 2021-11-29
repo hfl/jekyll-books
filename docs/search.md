@@ -82,21 +82,22 @@ search.rel_url: false
 
 ### 显示搜索按钮
 
-The search button displays in the bottom right corner of the screen and triggers the search input when clicked.
+在屏幕右下角显示搜索按钮，点击可跳至搜索框。
 
 ```yaml
-# Enable or disable the search button that appears in the bottom right corner of every page
-# Supports true or false (default)
+# 启用或者关闭在页面右下角显示搜索按钮
+# 支持 true 或 false （默认值）
 search.button: true
 ```
 
 
 ## 不参与搜索页面
 
-Sometimes you might have a page that you don't want to be indexed for the search nor to show up in search results, e.g, a 404 page.
-To exclude a page from search, add the `search_exclude: true` parameter to the page's YAML front matter:
+有些时候，有些页面不需要被索引并且被搜索到，例如 404 页面。
+从搜索中去除一个页面，添加 `search_exclude: true` 参数到该页面的
+ YAML 前导数据：
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```yaml
@@ -111,13 +112,13 @@ search_exclude: true
 
 ## 使用 GEM 生成搜索索引
 
-If you use Just the Docs as a remote theme, you do not need the following steps.
+如果您想要使用『文档而已』做远程主题，下列步骤则大可不必。
 
-If you use the theme as a gem, you must initialize the search by running this `rake` command that comes with `just-the-docs`:
+如果您使用 gem 版式，则必须运行 `rake` 命令联合 `just-the-docs` 进行初始化：
 
 ```bash
 $ bundle exec just-the-docs rake search:init
 ```
 
-This command creates the `assets/js/zzzz-search-data.json` file that Jekyll uses to create your search index.
-Alternatively, you can create the file manually with [this content]({{ site.github.repository_url }}/blob/master/assets/js/zzzz-search-data.json).
+此命令创建 `assets/js/zzzz-search-data.json` 文件，Jekyll 使用该文件创建搜索索引。
+当然，您可以参照[此内容]({{ site.github.repository_url }}/blob/master/assets/js/zzzz-search-data.json)手动创建文件。

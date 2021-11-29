@@ -6,13 +6,13 @@ parent: 工具类
 
 # 响应工具类
 
-Just the Docs spacing works in conjunction with a variety of modifiers that allow you to target specific screen sizes responsively. Use these in conjunction with spacing and display prefix and suffix classes.
+『文档而已』针对不同尺寸屏幕制定了响应的修饰符和对应变量。使用这些修饰符就可以很好的控制文档的空间利用。
 
-| Modifier  | Screen size                          |
+| 修饰符    | 屏幕尺寸                            |
 |:----------|:-------------------------------------|
-| (none)    | All screens until the next modifier  |
-| `xs`      | 320px (20rem) and up                 |
-| `sm`      | 500px (31.25rem) and up              |
-| `md`      | 740px (46.25rem) and up              |
-| `lg`      | 1120px (70rem) and up                |
-| `xl`      | 1400px (87.5rem) and up              |
+| (none)    | 适应各种屏幕直到指定特定修饰符     |
+| `xs`      | 320px (20rem) 及以上                 |
+| `sm`      | 500px (31.25rem) 及以上              |
+| `md`      | 740px (46.25rem) 及以上              |
+| `lg`      | 1120px (70rem) 及以上                |
+| `xl`      | 1400px (87.5rem) 及以上              |

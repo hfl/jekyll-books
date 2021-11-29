@@ -28,7 +28,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 abcdefghijklmnopqrstuvwxyz
 {: .fs-5 .ls-10 .code-example }
 
-对于等款字体，例如代码片段或者 `<pre>` 元素，『文档而已』使用原生系统等款字体：
+对于等宽字体，例如代码片段或者 `<pre>` 元素，『文档而已』使用原生系统等宽字体：
 
 ```scss
 "SFMono-Regular", Menlo, Consolas, Monospace

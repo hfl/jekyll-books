@@ -7,7 +7,7 @@ parent: 工具类
 # 布局工具类
 {: .no_toc }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC
@@ -17,9 +17,9 @@ parent: 工具类
 
 ## 空间控制
 
-These spacers are available to use for margins and padding with responsive utility classes. Combine these prefixes with a screen size and spacing scale to use them responsively.
+这些就是用来控制响应式布局的内外边距的工具类。结合这些前缀和屏幕尺寸以及比例就可以制作出响应式布局。
 
-| Classname prefix | What it does                  |
+| 类前缀           | 等同于                       |
 |:-----------------|:------------------------------|
 | `.m-`            | `margin`                      |
 | `.mx-`           | `margin-left`, `margin-right` |
@@ -29,7 +29,7 @@ These spacers are available to use for margins and padding with responsive utili
 | `.mb-`           | `margin-bottom`               |
 | `.ml-`           | `margin-left`                 |
 
-| Classname prefix | What it does                    |
+| 类前缀           | 等同于                         |
 |:-----------------|:--------------------------------|
 | `.p-`            | `padding`                       |
 | `.px-`           | `padding-left`, `padding-right` |
@@ -39,9 +39,9 @@ These spacers are available to use for margins and padding with responsive utili
 | `.pb-`           | `padding-bottom`                |
 | `.pl-`           | `padding-left`                  |
 
-Spacing values are based on a `1rem = 16px` spacing scale, broken down into these units:
+间距值基于 `1rem = 16px` 比例，细分为以下单位：
 
-| Spacer/suffix  | Size in rems  | Rem converted to px |
+| 间距/后缀     | rem 号        | Rem 转为 px         |
 |:---------------|:--------------|:--------------------|
 | `1`            | 0.25rem       | 4px                 |
 | `2`            | 0.5rem        | 8px                 |
@@ -53,12 +53,12 @@ Spacing values are based on a `1rem = 16px` spacing scale, broken down into thes
 | `8`            | 3rem          | 48px                |
 | `auto`         | auto          | auto                |
 
-Use `mx-auto` to horizontally center elements.
+使用 `mx-auto` 会水平居中元素。
 
 #### 示例
 {: .no_toc }
 
-In Markdown, use the `{: }` wrapper to apply custom classes:
+在 Markdown 里，用 `{: }` 包裹应用定制类：
 
 ```markdown
 This paragraph will have a margin bottom of 1rem/16px at large screens.
@@ -70,7 +70,7 @@ This paragraph will have 2rem/32px of padding on the right and left at all scree
 
 ## 水平对齐
 
-| Classname               | What it does                     |
+| 类名                   | 等同于                           |
 |:------------------------|:---------------------------------|
 | `.float-left`           | `float: left`                    |
 | `.float-right`          | `float: right`                   |
@@ -83,7 +83,7 @@ _Note: any of the `flex-` classes must be used on a parent element that has `d-f
 
 ## 垂直对齐
 
-| Classname              | What it does                    |
+| 类名                   | 等同于                         |
 |:-----------------------|:--------------------------------|
 | `.v-align-baseline`    | `vertical-align: baseline`      |
 | `.v-align-bottom`      | `vertical-align: bottom`        |
@@ -96,7 +96,7 @@ _Note: any of the `flex-` classes must be used on a parent element that has `d-f
 
 Display classes aid in adapting the layout of the elements on a page:
 
-| Class             |                         |
+| 类                |                         |
 |:------------------|:------------------------|
 | `.d-block`        | `display: block`        |
 | `.d-flex`         | `display: flex`         |

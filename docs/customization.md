@@ -15,24 +15,24 @@ nav_order: 6
 
 ---
 
-## Color schemes
+## 颜色方案
 {: .d-inline-block }
 
-New
+新
 {: .label .label-green }
 
-Just the Docs supports two color schemes: light (default), and dark.
+『文档而已』支持两个颜色方案：亮色（light，默认值），和暗色（dark）。
 
-To enable a color scheme, set the `color_scheme` parameter in your site's `_config.yml` file:
+启用一个颜色方案，在站点的 `_config.yml` 文件中设置 `color_scheme` 参数。 
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```yaml
-# Color scheme supports "light" (default) and "dark"
+# 颜色方案支持 "light" （默认）和 "dark"
 color_scheme: dark
 ```
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+<button class="btn js-toggle-dark-mode">预览暗色方案</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -40,47 +40,45 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Preview dark color scheme';
+    toggleDarkMode.textContent = '预览暗色方案';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
+    toggleDarkMode.textContent = '返回亮色';
   }
 });
 </script>
 
-## Custom schemes
+## 定制方案
 
-### Define a custom scheme
+### 定义一个定制方案
 
-You can add custom schemes.
-If you want to add a scheme named `foo` (can be any name) just add a file `_sass/color_schemes/foo.scss` (replace `foo` by your scheme name) 
-where you override theme variables to change colors, fonts, spacing, etc.
+您可以添加定制方案。
+假如您添加的方案叫做 `foo` （当然您可以任意给名字），那么就需要添加一个文件 `_sass/color_schemes/foo.scss` （记得将`foo`改为您给定的名字），在这个文件里您可以随意设定主题的颜色、字体、间距等。
 
-Available variables are listed in the [_variables.scss](https://github.com/pmarsceill/just-the-docs/tree/master/_sass/support/_variables.scss) file.
+可用变量列表在 [_variables.scss](https://github.com/pmarsceill/just-the-docs/tree/master/_sass/support/_variables.scss) 文件里。
 
-For example, to change the link color from the purple default to blue, include the following inside your scheme file:
+例如，修改链接颜色从紫色变为蓝色，需要在您的颜色方案文件里：
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```scss
 $link-color: $blue-000;
 ```
 
-_Note:_ Editing the variables directly in `_sass/support/variables.scss` is not recommended and can cause other dependencies to fail.
-Please use scheme files.
+_注意:_ 不推荐直接在 `_sass/support/variables.scss` 里编辑变量，如果那样做可能会引发其他数据错误。
+请使用方案文件。
 
-### Use a custom scheme
+### 使用定制方案
 
-To use the custom color scheme, only set the `color_scheme` parameter in your site's `_config.yml` file:
+使用定制颜色方案，只需在您的站点配置文件 `_config.yml` 里设置 `color_scheme` 参数：
 ```yaml
 color_scheme: foo
 ```
 
-### Switchable custom scheme
+### 可转换定制方案
 
-If you want to be able to change the scheme dynamically, for example via javascript, just add a file `assets/css/just-the-docs-foo.scss` (replace `foo` by your scheme name)
-with the following content:`
+如果您想动态转换颜色方案，可以使用 javascript 方法——添加文件 `assets/css/just-the-docs-foo.scss` （如果颜色方案名字不是 `foo`，请修改），输入内容如下：
 
 {% raw %}
     ---
@@ -88,26 +86,24 @@ with the following content:`
     {% include css/just-the-docs.scss.liquid color_scheme="foo" %}
 {% endraw %}
 
-This allows you to switch the scheme via the following javascript.
+这将会使您通过 javascript 转换颜色方案。
 
 ```js
 jtd.setTheme('foo');
 ```
 
-## Override and completely custom styles
+## 覆盖和完全定制样式
 
-For styles that aren't defined as variables, you may want to modify specific CSS classes.
-Additionally, you may want to add completely custom CSS specific to your content.
-To do this, put your styles in the file `_sass/custom/custom.scss`.
-This will allow for all overrides to be kept in a single file, and for any upstream changes to still be applied.
+如果不想只修改变量，而是要修改 CSS 类，或者增加新的 CSS 定制内容。那么，就将您的样式放进文件 `_sass/custom/custom.scss`。这样做既能将您的定制文件放
+进一个单独的文件易于管理，很不影响上游文件的修改应用。
 
-For example, if you'd like to add your own styles for printing a page, you could add the following styles.
+例如，如果您想添加自己的打印样式，可以添加下面的代码。
 
-#### Example
+#### 示例
 {: .no_toc }
 
 ```scss
-// Print-only styles.
+// 仅为打印样式。
 @media print {
   .side-bar, .page-header { display: none; }
   .main-content { max-width: auto; margin: 1em;}
