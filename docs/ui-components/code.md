@@ -6,10 +6,10 @@ has_children: true
 nav_order: 6
 ---
 
-# Code
+# 代码
 {: .no_toc }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC
@@ -17,27 +17,27 @@ nav_order: 6
 
 ---
 
-## Inline code
+## 行内代码
 
-Code can be rendered inline by wrapping it in single back ticks.
+行内代码使用反向单引号（`）包裹。
 
 <div class="code-example" markdown="1">
-Lorem ipsum dolor sit amet, `<inline code snippet>` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, `<行内代码片段>` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-## Heading with `<inline code snippet>` in it.
+## 带`<行内代码片段>`的标题。
 {: .no_toc }
 </div>
 ```markdown
-Lorem ipsum dolor sit amet, `<inline code snippet>` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, `<行内代码片段>` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-## Heading with `<inline code snippet>` in it.
+## 带`<行内代码片段>`的标题。
 ```
 
 ---
 
-## Syntax highlighted code blocks
+## 语法高亮代码块
 
-Use Jekyll's built-in syntax highlighting with Rouge for code blocks by using three backticks, followed by the language name:
+对于代码块使用三个反向单引号启用 Jekyll 内建代码高亮（Rouge），引入语言名称支持如下：
 
 <div class="code-example" markdown="1">
 ```js
@@ -60,9 +60,9 @@ var fun = function lang(l) {
 
 ---
 
-## Code blocks with rendered examples
+## 带有渲染示例的代码块
 
-To demonstrate front end code, sometimes it's useful to show a rendered example of that code. After including the styles from your project that you'll need to show the rendering, you can use a `<div>` with the `code-example` class, followed by the code block syntax. If you want to render your output with Markdown instead of HTML, use the `markdown="1"` attribute to tell Jekyll that the code you are rendering will be in Markdown format... This is about to get meta...
+演示前端代码，有时需要显示渲染结果。引入项目样式后需要渲染，可以是使用 `<div>` 加上 `code-example` 类，再使用代码块语法即可。如果您想要使用 Markdown 而不是 HTML 来渲染输出，使用 `markdown="1"` 属性告诉 Jekyll 您渲染的代码是 Markdown 格式……这是要获得元……
 
 <div class="code-example" markdown="1">
 

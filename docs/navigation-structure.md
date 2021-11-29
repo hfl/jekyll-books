@@ -18,17 +18,17 @@ nav_order: 5
 
 ---
 
-## 主导行
+## 主导航
 
-The main navigation for your Just the Docs site is on the left side of the page at large screens and on the top (behind a tap) on small screens. The main navigation can be structured to accommodate a multi-level menu system (pages with children and grandchildren).
+『文档而已』的主导航在大屏界面会出现在页面左侧，小屏界面会出现在页面顶端（需要点击后出现）。主导航可以打造为多级菜单系统（可以有多层下级页面）。
 
-By default, all pages will appear as top level pages in the main nav unless a parent page is defined (see [Pages with Children](#pages-with-children)).
+默认情况下，除非定义了父页面，否则所有页面都将在主导航中显示为顶级页面（请参阅[带有子项的页面](#带有子项的页面)）。
 
 ---
 
 ## 页面排序
 
-To specify a page order, you can use the `nav_order` parameter in your pages' YAML front matter.
+定义页面顺序可以在页面的 YAML 前导设定中使用 `nav_order` 参数设置。
 
 #### 示例
 {: .no_toc }
@@ -72,7 +72,7 @@ Pages with no `title` are automatically excluded from the navigation.
 
 ---
 
-## 含子页面的页面
+## 带有子项的页面
 
 Sometimes you will want to create a page with many children (a section). First, it is recommended that you keep pages that are related in a directory together... For example, in these docs, we keep all of the written documentation in the `./docs` directory and each of the sections in subdirectories like `./docs/ui-components` and `./docs/utilities`. This gives us an organization like:
 
@@ -141,7 +141,7 @@ The Buttons page appears as a child of UI Components and appears second in the U
 
 ### 自动生成目录
 
-By default, all pages with children will automatically append a Table of Contents which lists the child pages after the parent page's content. To disable this auto Table of Contents, set `has_toc: false` in the parent page's YAML front matter.
+默认情况下，所有带有子页面的页面会在内容后自动生成子页面的目录。取消此功能，在父页面的 YAML 前导参数设置 `has_toc: false` 即可。
 
 #### 示例
 {: .no_toc }
@@ -223,27 +223,27 @@ aux_links:
 
 ## 带页内目录导航的页面
 
-To generate a Table of Contents on your docs pages, you can use the `{:toc}` method from Kramdown, immediately after an `<ol>` in Markdown. This will automatically generate an ordered list of anchor links to various sections of the page based on headings and heading levels. There may be occasions where you're using a heading and you don't want it to show up in the TOC, so to skip a particular heading use the `{: .no_toc }` CSS class.
+要在文档页面生成目录，可以在 Markdown 的 `<ol>` 后使用 Kramdown 的 `{:toc}` 方法。这将基于页面各部分的标题自动生成一个带有锚点链接的有序列表。有时候您需要在页面中使用标题，却又不想让其出现在目录中，这时候就可以使用 `{: .no_toc }` 的 CSS 类来忽略某些标题。
 
 #### 示例
 {: .no_toc }
 
 ```markdown
-# Navigation Structure
+# 导航架构
 {: .no_toc }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 ```
 
-This example skips the page name heading (`#`) from the TOC, as well as the heading for the Table of Contents itself (`##`) because it is redundant, followed by the table of contents itself. To get an unordered list, replace  `1. TOC` above by `- TOC`.
+本示例在目录中忽略了页面名称标题（`#`），以及目录自己的标题（`##`），因为它是多余的，然后是目录。如果使用无序列表，用 `- TOC` 代替 `1. TOC`。
 
 ### 折叠目录
 
-The Table of Contents can be made collapsible using the `<details>` and `<summary>` elements , as in the following example. The attribute `open` (expands the Table of Contents by default) and the styling with `{: .text-delta }` are optional.
+目录可以使用 `<details>` 和 `<summary>` 元素设置折叠，如下所示。属性 `open` （默认展开目录）和样式 `{: .text-delta }` 可选。
 
 ```markdown
 <details open markdown="block">
@@ -256,4 +256,4 @@ The Table of Contents can be made collapsible using the `<details>` and `<summar
 </details>
 ```
 
-The result is shown at [the top of this page](#导航架构) (`{:toc}` can be used only once on each page).
+效果如[页面顶端](#导航架构)（`{:toc}` 每个页面只能用一次）。

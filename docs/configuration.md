@@ -105,12 +105,12 @@ gh_edit_view_mode: "tree" # "tree" 或者 "edit" ，您想要用于立即跳转�
 
 _注意：`footer_content` 已经弃用，但仍支持。更好的使用体验是将其功能移入`_includes/footer_custom.html`——内容将支持功能强大的标记语言 liquid。_
 
-- the "page last modified" data will only display if a page has a key called `last_modified_date`, formatted in some readable date format
-- `last_edit_time_format` uses Ruby's DateTime formatter; see examples and more information [at this link.](https://apidock.com/ruby/DateTime/strftime)
-- `gh_edit_repository` is the URL of the project's GitHub repository
-- `gh_edit_branch` is the branch that the docs site is served from; defaults to `master`
-- `gh_edit_source` is the source directory that your project files are stored in (should be the same as [site.source](https://jekyllrb.com/docs/configuration/options/))
-- `gh_edit_view_mode` is `"tree"` by default, which brings the user to the github page; switch to `"edit"` to bring the user directly into editing mode
+- “页面最后修改”只有在页面引用关键字 `last_modified_date` 时出现，格式使用可读日期格式。
+- `last_edit_time_format` 启用 Ruby 的 DateTime 格式；查看更多信息和示例[在此链接](https://apidock.com/ruby/DateTime/strftime)。
+- `gh_edit_repository` 指项目在 GitHub 仓储的 URL
+- `gh_edit_branch` 指文档分支，默认为 `master`
+- `gh_edit_source` 指项目文件存储源目录（等同 [site.source](https://jekyllrb.com/docs/configuration/options/)）
+- `gh_edit_view_mode` 默认值 `"tree"`，该模式会引导用户到 GitHub 页面；转换为 `"edit"` 将引导用户进入编辑模式
 
 ## 色彩方案
 
@@ -165,16 +165,15 @@ just_the_docs:
     docs:
       # 设定集合名字
       name: Documentation
-      # Exclude the collection from the navigation
-      # Supports true or false (default)
+      # 在导航中去除集合
+      # 支持 true 或 false （默认值）
       nav_exclude: false
-      # Exclude the collection from the search
-      # Supports true or false (default)
+      # 在搜索中去除集合
+      # 支持 true 或 false （默认值）
       search_exclude: false
 ```
 
-You can reference multiple collections.
-This creates categories in the navigation with the configured names.
+您可以使用多个集合，在导航中可以配置不同的类别名称。
 ```yaml
 collections:
   docs:

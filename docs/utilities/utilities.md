@@ -9,5 +9,5 @@ permalink: docs/utilities
 # 工具类
 {: .no_toc }
 
-CSS utility classes come in handy when you to want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size.
+CSS 工具类用于覆盖默认样式创建附加空格（margins/padding）、纠正字体大小或粗细的意外变化、添加颜色或者对于特定尺寸屏幕隐藏（或者显示）某些东西等。
 {: .fs-6 .fw-300 }

@@ -5,13 +5,13 @@ parent: UI 组件
 nav_order: 4
 ---
 
-# Tables
+# 表格
 
-Tables are responsive by default, allowing wide tables to have a horizontal scroll to access columns outside of the normal viewport.
+表格默认是响应式的，过宽的表格可以通过横向滚动访问窗口之外的列。
 
 <div class="code-example" markdown="1">
 
-| head1        | head two          | three |
+| 表头一      | 表头二            | 三    |
 |:-------------|:------------------|:------|
 | ok           | good swedish fish | nice  |
 | out of stock | good and plenty   | nice  |
@@ -20,7 +20,7 @@ Tables are responsive by default, allowing wide tables to have a horizontal scro
 
 </div>
 ```markdown
-| head1        | head two          | three |
+| 表头一      | 表头二            | 三    |
 |:-------------|:------------------|:------|
 | ok           | good swedish fish | nice  |
 | out of stock | good and plenty   | nice  |

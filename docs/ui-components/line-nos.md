@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 带行数的代码
+title: 带行数的代码片段
 parent: 代码
 grand_parent: UI 组件
 permalink: /docs/ui-components/code/line-numbers/
 ---
 
-# Code snippets with line numbers
+# 带行数的代码片段
 
 The default settings for HTML compression are incompatible with the HTML
 produced by Jekyll (4.1.1 or earlier) for line numbers from highlighted code

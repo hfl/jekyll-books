@@ -5,10 +5,10 @@ parent: UI 组件
 nav_order: 5
 ---
 
-# Lists
+# 列表
 {: .no_toc }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC
@@ -16,16 +16,16 @@ nav_order: 5
 
 ---
 
-Most lists can be rendered with pure Markdown.
+使用纯 Markdown 可以渲染更多列表
 
-## Unordered list
+## 无序列表
 
 <div class="code-example" markdown="1">
 - Item 1
 - Item 2
 - Item 3
 
-_or_
+_或者_
 
 * Item 1
 * Item 2
@@ -36,14 +36,14 @@ _or_
 - Item 2
 - Item 3
 
-_or_
+_或者_
 
 * Item 1
 * Item 2
 * Item 3
 ```
 
-## Ordered list
+## 有序列表
 
 <div class="code-example" markdown="1">
 1. Item 1
@@ -56,7 +56,7 @@ _or_
 1. Item 3
 ```
 
-## Task list
+## 任务列表
 
 <div class="code-example" markdown="1">
 - [ ] hello, this is a todo item
@@ -69,9 +69,9 @@ _or_
 - [x] goodbye, this item is done
 ```
 
-## Definition list
+## 定义列表
 
-Definition lists require HTML syntax and aren't supported with the GitHub Flavored Markdown compiler.
+定义列表需要 HTML 语法和不支持 GitHub Flavored Markdown 编译器。
 
 <div class="code-example" markdown="1">
 <dl>

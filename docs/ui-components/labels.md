@@ -1,49 +1,49 @@
 ---
 layout: default
-title: 标签
+title: 标记
 parent: UI 组件
 nav_order: 3
 ---
 
-# Labels
+# 标记
 
-Use labels as a way to add an additional mark to a section of your docs. Labels come in a few colors. By default, labels will be blue.
+为您的文档章节添加标记。标记有不同颜色，默认是蓝色。
 
 <div class="code-example" markdown="1">
-Default label
+默认标记
 {: .label }
 
-Blue label
+蓝标
 {: .label .label-blue }
 
-Stable
+稳定版
 {: .label .label-green }
 
-New release
+新版
 {: .label .label-purple }
 
-Coming soon
+开发中
 {: .label .label-yellow }
 
-Deprecated
+已废弃
 {: .label .label-red }
 </div>
 ```markdown
-Default label
+默认标记
 {: .label }
 
-Blue label
+蓝标
 {: .label .label-blue }
 
-Stable
+稳定版
 {: .label .label-green }
 
-New release
+新版
 {: .label .label-purple }
 
-Coming soon
+开发中
 {: .label .label-yellow }
 
-Deprecated
+已废弃
 {: .label .label-red }
 ```
